@@ -1,0 +1,2 @@
+class Stewardess < User
+end
