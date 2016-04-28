@@ -16,10 +16,13 @@ gem 'turbolinks', '~> 5.x'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 gem 'redis'
+
+# 后台
+gem 'sidekiq'
 
 # redis cache
 gem 'redis-namespace'
@@ -28,23 +31,21 @@ gem 'redis-objects'
 # 用户
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 
+# 标签
+gem 'acts-as-taggable-on', github: 'mbleigh/acts-as-taggable-on'
+
 # 搜索
-gem 'elasticsearch'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-
-# 后台
-gem 'sidekiq', '~> 4.0.2'
 
 # api https://github.com/rails-api/active_model_serializers
 gem 'active_model_serializers'
 
 group :development do
-  gem 'mina' # 暂时先用mina
+  gem 'mina'
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
   gem 'rspec-rails', '~> 3.0'
@@ -60,6 +61,3 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
