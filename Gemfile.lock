@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/mbleigh/acts-as-taggable-on.git
+  revision: dde41a4d0d14e0f5b57c685265f68545383f70fa
+  specs:
+    acts-as-taggable-on (3.5.0)
+      activerecord (>= 3.2, < 5)
+
+GIT
   remote: https://github.com/plataformatec/devise.git
   revision: 2b3799e6ceb315172d14a16103ab9fb1702f79fc
   specs:
@@ -240,6 +247,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  acts-as-taggable-on!
   awesome_print
   better_errors
   binding_of_caller

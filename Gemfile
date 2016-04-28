@@ -31,6 +31,9 @@ gem 'redis-objects'
 # 用户
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 
+# 标签
+gem 'acts-as-taggable-on', github: 'mbleigh/acts-as-taggable-on'
+
 # 搜索
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
