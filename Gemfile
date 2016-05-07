@@ -23,6 +23,7 @@ gem 'redis'
 
 # 后台
 gem 'sidekiq'
+# gem 'sinatra', github: 'sinatra/sinatra', require: nil
 
 # redis cache
 gem 'redis-namespace'
