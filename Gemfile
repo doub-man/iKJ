@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
 gem 'pg', '~> 0.18'
 gem 'puma'
@@ -20,6 +19,7 @@ gem 'redis'
 
 # 后台
 gem 'sidekiq'
+# gem 'sinatra', github: 'sinatra/sinatra', require: nil
 
 # redis cache
 gem 'redis-namespace'
