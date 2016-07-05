@@ -8,7 +8,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
@@ -16,8 +15,6 @@ gem 'turbolinks', '~> 5.x'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 gem 'redis'
 
@@ -33,6 +30,9 @@ gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 
 # 标签
 gem 'acts-as-taggable-on', github: 'mbleigh/acts-as-taggable-on'
+
+# 关注
+gem 'acts_as_followable', git: 'git://github.com/w-zengtao/acts_as_followable.git'
 
 # 搜索
 gem 'elasticsearch-model'

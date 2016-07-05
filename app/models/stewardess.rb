@@ -14,6 +14,8 @@ class Stewardess < ApplicationRecord
   has_many :stewardess_customers
   has_many :customers, through: :stewardess_customers
 
+  belongs_to :organization
+
   # Scopes
 
   # Methods
